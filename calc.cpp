@@ -1,6 +1,28 @@
 #include <iostream>
 using namespace std;
 
+int operation();
+int numbers();
+int calculator(int, int, int);
+
+int main(){
+	while(1 ==1){
+	int operatorID;
+	operatorID = operation();
+	if(operatorID ==0){
+	break;
+	}
+	int num1, num2;
+	num1 = numbers();
+	num2 = numbers();
+	cout<<endl;
+
+	calculator(num1, num2, operatorID);
+	}
+
+	return 0;
+}
+
 int operation(){
   string giris;
   giris =
@@ -10,11 +32,11 @@ int operation(){
   "-bolme islemi icin 4'e \n"
   "-cikmak icin 0'a basiniz \n";
   cout<<giris;
+  
 	int a;
 	cin>>a;
 	return a;
 }
-
 int numbers(){
 	cout<<"İslem yapmak istediginiz sayiyi giriniz";
 	int b;
@@ -47,22 +69,3 @@ int calculator(int number1, int number2, int  opID){
 		k = 123456789;
 }
 }
-
-int main(){
-	while(1 ==1){
-	int operatorID;
-	operatorID = operation();
-	if(operatorID ==0){
-	break;
-	}
-	int num1, num2;
-	num1 = numbers();
-	num2 = numbers();
-	cout<<endl;
-
-	calculator(num1, num2, operatorID);
-	}
-
-	return 0;
-}
-
