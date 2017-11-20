@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int operation();
-int numbers();
-int calculator(int, int, int);
+inline int operation();
+inline int numbers();
+inline int calculator(int, int, int);
 
 int main(){
 	while(1 ==1){
